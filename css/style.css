@@ -300,9 +300,10 @@ h1 {
   width: max-content;
 }
 
-#overview .running-text .image-ticker li{
+#overview .running-text .image-ticker li {
   width: 275px;
 }
+
 #overview .running-text .image-ticker img {
   width: 100%;
   height: auto;
@@ -844,7 +845,7 @@ article:focus {
 
 .end {
   padding: 2rem 0;
-  position: relative;
+  color: #777;
 }
 
 .wrapper .faq li img {
@@ -861,6 +862,7 @@ article:focus {
   display: flex;
   justify-content: space-between;
 }
+
 .wrapper .faq li {
   border: 2px solid #aaa;
   background-color: #f9f9f9;
@@ -873,14 +875,13 @@ article:focus {
   border-radius: 14px;
 }
 
-.wrapper .faq li .desc{
+.wrapper .faq li .desc {
   margin-top: 1rem;
   font-size: 12px;
   display: none;
 }
 
-.wrapper .faq li:hover
-.desc{
+.wrapper .faq li:hover .desc {
   display: block;
 }
 
@@ -907,6 +908,16 @@ footer {
   width: 100%;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.303);
   border-radius: 40px 40px 0 0;
+  position: relative;
+}
+
+.chat {
+  position: absolute;
+  background-color: #1972f5;
+  bottom: 65px;
+  right: 59px;
+  padding: 15px;
+  border-radius: 32px;
 }
 
 footer>.wrapper {
@@ -1150,8 +1161,8 @@ form button {
   transform: translateY(1rem);
 }
 
-@media (min-width: 1400px){
-  .container{
+@media (min-width: 1400px) {
+  .container {
     width: 1092px;
     margin: auto;
   }
@@ -1650,6 +1661,10 @@ form button {
 
   .comments-section {
     position: static;
+  }
+
+  .chat {
+    right: 14px;
   }
 
   .col-sm-1 {
