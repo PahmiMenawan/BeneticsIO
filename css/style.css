@@ -845,6 +845,7 @@ article:focus {
 
 .end {
   padding: 2rem 0;
+  position: relative;
 }
 
 .wrapper .faq li img {
@@ -1150,6 +1151,15 @@ form button {
   transform: translateY(1rem);
 }
 
+.chat {
+    position: absolute;
+    width: 70px;
+    background-color: #1972f5;
+    padding: 15px;
+    border-radius: 32px;
+    bottom: 49px;
+    right: -110px;
+}
 @media (min-width: 1400px){
   .container{
     width: 1092px;
