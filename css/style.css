@@ -301,10 +301,14 @@ h1 {
   width: max-content;
 }
 
+#overview .running-text .image-ticker li{
+  width: 275px;
+}
 #overview .running-text .image-ticker img {
-  width: 20vw;
+  width: 100%;
   height: auto;
 }
+
 
 @keyframes move {
   from {
@@ -885,7 +889,7 @@ article:focus {
   position: sticky;
   top: 4.5rem;
   height: fit-content;
-  padding: 0rem 2rem 2rem;
+  padding: 0rem 2rem 2rem 0;
 }
 
 .wrapper .title h2 {
@@ -1502,12 +1506,6 @@ form button {
 }
 
 @media (max-width: 575.98px) {
-
-
-  #overview .running-text .image-ticker img {
-    width: 40vw;
-    height: auto;
-  }
 
   #advantages .cards .text h3 {
     font-size: 22px;
