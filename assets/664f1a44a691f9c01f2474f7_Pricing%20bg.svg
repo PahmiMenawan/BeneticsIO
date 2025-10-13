@@ -1,0 +1,44 @@
+<svg width="2560" height="1881" viewBox="0 0 2560 1881" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_562_340" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-547" y="-239" width="3659" height="2259">
+<rect x="-547" y="-239" width="3659" height="2259" fill="url(#paint0_radial_562_340)"/>
+</mask>
+<g mask="url(#mask0_562_340)">
+<g opacity="0.4">
+<path d="M-875.024 480.536L1075.42 888.632" stroke="#D2D2D2" stroke-width="2" stroke-dasharray="25.83 25.83"/>
+<path d="M-868.175 930.714H1088.14" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M-868.175 1371.1L1092.05 963.009" stroke="#D2D2D2" stroke-width="2" stroke-dasharray="25.83 25.83"/>
+<path d="M3431.02 480.536L1454.15 888.632" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M3427.1 933.649H1458.07" stroke="#D2D2D2" stroke-width="2" stroke-dasharray="25.83 25.83"/>
+<path d="M3427.11 1387.74L1461 975.731" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M2656.91 1880L1425.77 1014.88" stroke="#D2D2D2" stroke-width="2" stroke-dasharray="25.83 25.83"/>
+<path d="M1856.38 1843.79L1312.25 992.368" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M696.681 1850.64L1224.17 998.24" stroke="#D2D2D2" stroke-width="2" stroke-dasharray="25.83 25.83"/>
+<path d="M-54.9199 1818.35L1134.14 1008.03" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M-103.852 1L1149.79 849.486" stroke="#D2D2D2" stroke-width="2" stroke-dasharray="25.83 25.83"/>
+<path d="M696.681 20.5728L1233.96 866.123" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M1273.1 26.4448V859.273" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M1846.59 33.2958L1299.53 888.633" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M2610.91 36.2303L1367.05 866.122" stroke="#D2D2D2" stroke-width="2" stroke-dasharray="25.83 25.83"/>
+<rect x="979.531" y="806.447" width="587.145" height="246.576" rx="18.5729" stroke="#D2D2D2" stroke-width="2"/>
+<rect x="879.71" y="763.387" width="786.789" height="332.697" rx="18.5729" stroke="#D2D2D2" stroke-width="2"/>
+<rect x="748.569" y="708.582" width="1051.02" height="442.305" rx="18.5729" stroke="#D2D2D2" stroke-width="2"/>
+<rect x="574.371" y="636.163" width="1397.46" height="587.145" rx="18.5729" stroke="#D2D2D2" stroke-width="2"/>
+<rect x="398.214" y="559.827" width="1755.65" height="739.814" rx="18.5729" stroke="#D2D2D2" stroke-width="2"/>
+<rect x="177.042" y="467.835" width="2190.17" height="923.799" rx="18.5729" stroke="#D2D2D2" stroke-width="2"/>
+<rect x="-95.0244" y="354.313" width="2730.38" height="1150.85" rx="18.5729" stroke="#D2D2D2" stroke-width="2"/>
+<rect x="-437.549" y="209.473" width="3419.35" height="1440.52" rx="18.5729" stroke="#D2D2D2" stroke-width="2"/>
+<rect x="-805.521" y="56.8035" width="4151.38" height="1745.86" rx="18.5729" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M-881.877 34.2744L1084.22 845.572" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M-922 1865.32L1060.74 1013.9" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M3438.85 17.6367L1443.39 856.337" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M3482.89 1859.45L1446.32 993.347" stroke="#D2D2D2" stroke-width="2"/>
+<path d="M1273.1 1828.13V979.646" stroke="#D2D2D2" stroke-width="2"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_562_340" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1282.5 890.5) rotate(90) scale(1129.5 1829.5)">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#737373" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
