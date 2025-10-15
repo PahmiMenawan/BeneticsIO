@@ -5,6 +5,15 @@
   transition: .5s;
 }
 
+@font-face {
+  font-family: "OpenSauce";
+  src: url('opensauceone-medium-webfont.woff2') format('woff2'),
+    url('opensauceone-medium-webfont.woff') format('woff'),
+    url("../assets/Open-Sauce-One-ExtraBold/opensauce/OpenSauceOne-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -22,20 +31,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
-}
-
-
-@font-face {
-  font-family: "OpenSauce";
-  src: url('opensauceone-medium-webfont.woff2') format('woff2'),
-    url('opensauceone-medium-webfont.woff') format('woff'),
-    url("../assets/Open-Sauce-One-ExtraBold/opensauce/OpenSauceOne-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-h2 {
-  margin-bottom: 1rem;
 }
 
 section {
@@ -221,13 +216,10 @@ select {
 
 .hero {
   margin: 1rem auto;
-}
-
-.global-padding {
   padding: 0 13rem;
 }
 
-h1 {
+h1.main-title {
   text-align: center;
   color: #333;
   font-size: 3rem;
@@ -236,7 +228,7 @@ h1 {
   margin: 12px 0;
 }
 
-#overview h1 span {
+h1.main-title span {
   color: #ffb700;
 }
 
@@ -244,28 +236,27 @@ h1 {
   text-align: center;
   color: #777;
   line-height: 1.8rem;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 1rem;
 }
 
 
 
-#overview .hero .buttons {
+.hero .buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  /* control spacing here instead of on each button */
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-#overview .hero .buttons .try-it {
+.hero .buttons .try-it {
   background-color: white;
   font-weight: bold;
   color: #333;
   cursor: pointer;
 }
 
-#overview .hero .buttons button {
+.hero .buttons button {
   margin: 0;
   padding: 0.5em 1.6em;
   border-radius: 30px;
@@ -275,7 +266,7 @@ h1 {
 
 }
 
-#overview .hero .buttons .book {
+.hero .buttons .book {
   background-color: #ffb700;
   color: white;
 }
@@ -297,13 +288,6 @@ video {
   overflow: hidden;
 }
 
-#overview .running-text h3 {
-  text-align: center;
-  margin-top: 6rem;
-  font-size: 2rem;
-  color: #333;
-}
-
 .running-text .image-ticker {
   display: flex;
   animation: move 20s linear infinite;
@@ -311,11 +295,11 @@ video {
   width: max-content;
 }
 
-#overview .running-text .image-ticker li {
+.running-text .image-ticker li {
   width: 275px;
 }
 
-#overview .running-text .image-ticker img {
+.running-text .image-ticker img {
   width: 100%;
   height: auto;
 }
@@ -344,7 +328,7 @@ h2 {
   line-height: 1.3;
 }
 
-#advantages .cards {
+.cards {
   border-radius: 12px;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -366,7 +350,7 @@ h2 {
   right: 0;
 }
 
-#advantages .cards .image {
+.cards .image {
   position: relative;
   background-color: #fefefe;
   /* padding: 3rem 5rem; */
@@ -376,7 +360,7 @@ h2 {
 }
 
 
-#advantages .cards .image img {
+.cards .image img {
   position: absolute;
   top: 0;
   left: 50%;
@@ -388,18 +372,18 @@ h2 {
   filter: blur(3px);
 }
 
-#advantages .cards .image img.offset {
+.cards .image img.offset {
   top: 50%;
   transform: translateY(-50%);
 }
 
 
-#advantages .cards .image img.card3 {
+.cards .image img.card3 {
   top: 30%;
   height: 30%;
 }
 
-#advantages .cards .text {
+.cards .text {
   margin: auto;
   text-align: center;
   padding: 0 3rem;
@@ -408,22 +392,22 @@ h2 {
   line-height: 1.5rem;
 }
 
-#advantages .cards .text h3 {
+.cards .text h3 {
   color: #333;
   line-height: 2rem;
 }
 
-#advantages .cards .text p {
+.cards .text p {
   margin-top: 1.4rem;
   font-size: 13px;
   color: #666;
 }
 
-#advantages .cards .text a {
+.cards .text a {
   color: #ffb700;
 }
 
-#advantages .discover {
+.discover {
   text-align: center;
   background-color: #ffb700;
   font-family: "OpenSauce";
@@ -459,7 +443,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 0 3em;
+  padding-right: 17rem;
   color: #fff;
 }
 
@@ -529,7 +513,7 @@ h2 {
   border-radius: 20px;
 }
 
-#advantages .subtitle {
+.subtitle {
   font-weight: bold;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.303);
   width: fit-content;
@@ -539,19 +523,19 @@ h2 {
   color: #666;
 }
 
-#advantages .title {
+.title {
   position: relative;
   width: 30%;
 }
 
-#advantages .title p {
+.title p {
   font-size: 0.9rem;
   margin-bottom: 1rem;
   text-align: left;
 
 }
 
-#advantages .title h2 {
+.title h2 {
   text-align: left;
   font-size: 2.2em;
   text-align: left;
@@ -587,16 +571,7 @@ h2 {
   gap: 2rem;
 }
 
-/* buttons: remove per-button margins and use gap on container */
-#overview .hero .buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  /* control spacing here instead of on each button */
-  margin-top: 1rem;
-}
-
-#overview .hero .buttons button {
+.hero .buttons button {
   margin: 0;
   padding: 0.5em 1.6em;
   border-radius: 30px;
@@ -640,8 +615,8 @@ h2 {
   width: max-content;
   padding-inline: 2rem;
   position: absolute;
-  top: 0;
-  left: 300px;
+  top: -2rem;
+  left: 28rem;
 }
 
 
@@ -672,7 +647,7 @@ h2 {
 /* PRICES */
 
 
-#prices .toggle {
+.toggle {
   border: 2px solid #aaa;
   background-color: #eee;
   padding: 10px;
@@ -702,48 +677,48 @@ h2 {
   color: white;
 }
 
-#prices .plans {
+.plans {
   display: flex;
   /* flex-wrap: wrap; */
   /* width: 100%; */
   justify-content: space-between;
-  gap: 30px;
+  gap: 1.5rem;
   margin: 0 auto;
 }
 
-#prices .plan {
+.plan {
   background-color: #fefefe;
   /* width: 100%; */
   padding: 2rem;
   border-radius: 16px;
 }
 
-#prices .plan .name {
+.plan .name {
   font-weight: bold;
 }
 
-#prices .plan .price {
+.plan .price {
   font-weight: bold;
   font-size: 2rem;
 }
 
-#prices .plan .desc {
+.plan .desc {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.518);
   line-height: 1.5rem;
 }
 
-#prices .plan span {
+.plan span {
   font-weight: normal;
   color: rgba(0, 0, 0, 0.518);
   font-size: 0.8rem;
 }
 
-#prices .plan>* {
+.plan>* {
   margin: 1rem 0;
 }
 
-#prices .plan .try {
+.plan .try {
   text-align: center;
   width: 100%;
   background-color: #fefefe;
@@ -755,7 +730,7 @@ h2 {
 }
 
 .learnmore {
-  margin: 2.5rem auto;
+  margin: 1.5rem auto;
   width: 100%;
   padding: 15px;
   border-radius: 40px;
@@ -785,7 +760,7 @@ article a {
   text-decoration: none;
 }
 
-#blog article:hover a .categories {
+article:hover a .categories {
   background-color: #0a0a0a;
 }
 
@@ -795,7 +770,7 @@ article:focus {
   transition: .6s;
 }
 
-#blog article img {
+article img {
   width: 100%;
   height: 30%;
   border-radius: 12px;
@@ -808,14 +783,14 @@ article:focus {
   gap: 2rem;
 }
 
-#blog article .categories,
-#blog article h3,
-#blog article p,
-#blog article .date {
+article .categories,
+article h3,
+article p,
+article .date {
   margin: 20px 0;
 }
 
-#blog article .categories {
+article .categories {
   background-color: #ffb700;
   color: #fcfcfc;
   padding: 0.5rem 1rem;
@@ -825,18 +800,18 @@ article:focus {
 }
 
 
-#blog article h3 {
+article h3 {
   font-size: 1.4rem;
   letter-spacing: 1px;
 }
 
-#blog article p {
+article p {
   color: #777;
   font-size: 0.8rem;
   line-height: 1.6;
 }
 
-#blog article .date {
+article .date {
   font-weight: bold;
   padding-bottom: 5em;
   margin-bottom: 0;
@@ -892,7 +867,7 @@ article:focus {
   display: block;
 }
 
-#faq .wrapper .title {
+.wrapper .title {
   width: 100%;
   position: sticky;
   top: 4.5rem;
@@ -1080,9 +1055,9 @@ form button {
 
 .yellow-btn:hover,
 .yellow-btn:focus,
-#advantages .discover:hover,
-#advantages .discover:focus,
-#overview .hero .buttons .book:hover {
+.discover:hover,
+.discover:focus,
+.hero .buttons .book:hover {
   background-color: #ffbd15;
   color: black;
 }
@@ -1090,8 +1065,8 @@ form button {
 
 .white-btn:hover,
 .white-btn:focus,
-#overview .hero .buttons .try-it:hover,
-#overview .hero .buttons .try-it:focus {
+.hero .buttons .try-it:hover,
+.hero .buttons .try-it:focus {
   color: #fcb731;
 }
 
@@ -1126,7 +1101,7 @@ form button {
     width: 100vw;
   }
 
-  #advantages .cards .image {
+  .cards .image {
     height: 200px;
     margin: 0 200px;
   }
@@ -1179,7 +1154,7 @@ form button {
     flex-wrap: wrap;
   }
 
-  #faq .wrapper .title {
+  .wrapper .title {
     width: 100%;
     position: relative;
     top: 0;
@@ -1195,11 +1170,11 @@ form button {
 
 @media (max-width: 767.98px) {
 
-  #advantages .title.opinion {
+  .title.opinion {
     width: 40%;
   }
 
-  #prices .plans {
+  .plans {
     flex-wrap: wrap;
   }
 
@@ -1213,7 +1188,7 @@ form button {
     margin: 1rem 0;
   }
 
-  .global-padding {
+  .hero {
     padding: 0;
   }
 
@@ -1234,7 +1209,7 @@ form button {
 
 @media (max-width: 575.98px) {
 
-  #advantages .cards .text h3 {
+  .cards .text h3 {
     font-size: 22px;
   }
 
@@ -1250,21 +1225,21 @@ form button {
     font-size: 11px;
   }
 
-  #overview .hero .buttons {
+  .hero .buttons {
     flex-direction: column;
   }
 
-  #advantages .cards .image {
+  .cards .image {
     height: 200px;
     margin: 0;
   }
 
-  #advantages .title.opinion {
+  .title.opinion {
     width: 100%;
   }
 
-  #advantages .cards .image,
-  #advantages .cards .text {
+  .cards .image,
+  .cards .text {
     padding: 0;
   }
 
@@ -1272,17 +1247,16 @@ form button {
     padding: 1.5rem;
   }
 
-  #overview .running-text h3 {
-    font-size: 20px;
-  }
 
-  h1 {
+  h1.main-title {
     font-size: 30px;
     margin: 5px;
   }
 
-  #overview .hero .buttons button {
-    font-size: 1.2em;
+  .hero .buttons button {
+    font-size: 1rem;
+    width: 60%;
+    margin: 0 auto;
   }
 
   .yellow-card {
@@ -1310,7 +1284,7 @@ form button {
     padding-inline: 1rem;
   }
 
-  #advantages .cards .image {
+  .cards .image {
     display: none;
   }
 
@@ -1327,7 +1301,7 @@ form button {
     font-size: .8rem;
   }
 
-  #blog article h3 {
+  article h3 {
     font-size: 1.2rem;
     letter-spacing: 1px;
   }
@@ -1369,12 +1343,12 @@ form button {
     text-align: center;
   }
 
-  #advantages .discover {
+  .discover {
     padding: 0.8rem 1rem;
     font-size: .9rem;
   }
 
-  #faq .wrapper .title {
+  .wrapper .title {
     padding: 0;
     padding-bottom: 2rem;
   }
@@ -1385,5 +1359,9 @@ form button {
 
   .chat {
     right: 14px;
+  }
+
+  footer{
+    padding: 0 2rem;
   }
 }
