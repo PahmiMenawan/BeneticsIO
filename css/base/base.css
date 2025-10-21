@@ -1,0 +1,171 @@
+/* BEHIND THE SCENES */
+@font-face {
+  font-family: "OpenSauce";
+  src: url('../../assets/Fonts/opensauceone-medium-webfont.woff2') format('woff2'),
+    url('../../assets/Fonts/opensauceone-medium-webfont.woff') format('woff'),
+    url("../../assets/Fonts/OpenSauceOne-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "OpenSauce";
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fcb731;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* GLOBAL STYLES */
+section {
+  margin-bottom: 10rem;
+  background-image: url("../../assets/img/section-background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+a,
+li,
+article {
+  transition: .3s;
+}
+
+li,
+.list {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 72px;
+  font-size: 13px;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: transparent;
+}
+
+.shadow {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.148);
+}
+
+.header {
+  font-weight: bold;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #666;
+  background-color: #f9f9f9;
+}
+
+.hero {
+  margin: 2rem auto;
+  padding: 0 13rem;
+}
+
+.container,
+.container-lg {
+  width: 80vw;
+  max-width: 1024px;
+  margin-inline: auto;
+  /* overflow-x: hidden; */
+}
+
+.container-fluid {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.col-6 {
+  max-width: calc(100% / 12 * 6);
+  flex-basis: calc(100% / 12 * 6);
+}
+
+/* HOVERS */
+
+/* HOVERS - BUTTONS */
+.yellow-btn:hover,
+.yellow-btn:focus,
+.advantages__discover-btn:hover,
+.advantages__discover-btn:focus,
+.hero__buttons .navbar__btn--book:hover {
+  background-color: #ffbd15;
+  color: black;
+  transform: scale(1.05);
+}
+
+.white-btn:hover,
+.white-btn:focus,
+.hero__buttons .hero__btn--secondary:hover,
+.hero__buttons .hero__btn--secondary:focus {
+  color: #fcb731;
+  transform: scale(1.05);
+}
+
+/* HOVERS - PRICES */
+.price__toggle button:hover {
+  background-color: #fcfcfc;
+}
+
+/* HOVERS - BLOG */
+.blog-section__item:hover a .categories {
+  transition: .3s;
+  color: #0a0a0a;
+}
+
+.blog-section__item:hover,
+.blog-section__item:focus {
+  transform: scale(1.05);
+  background-color: #efefef;
+  transition: .6s;
+}
+
+/* HOVERS - FAQ */
+.faq__wrapper .faq__list li:hover .faq__answer {
+  display: block;
+}
+
+/* HOVERS - FOOTER */
+.list li a:hover,
+.list li a:focus {
+  text-decoration: underline;
+}

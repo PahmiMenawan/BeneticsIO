@@ -179,6 +179,12 @@ select {
   border-radius: 2px;
 }
 
+.navbar__mobile-menu {
+  padding: 2rem;
+  display: none;
+  margin-left: auto;
+}
+
 /* OVERVIEW */
 .header--main {
   font-weight: bold;
@@ -313,7 +319,7 @@ h2 {
   background-color: #fefefe;
 }
 
-.advantages__card .advantages__image {
+.advantages__image {
   position: relative;
   background-color: #fefefe;
   height: 400px;
@@ -321,7 +327,7 @@ h2 {
   border-radius: 12px;
 }
 
-.advantages__card .advantages__image img {
+.advantages__image img {
   position: absolute;
   top: 0;
   left: 50%;
@@ -329,22 +335,22 @@ h2 {
   height: 100%;
 }
 
-.advantages__card .advantages__image img.advantages__image--blur {
+img.advantages__image--blur {
   filter: blur(3px);
 }
 
-.advantages__card .advantages__image img.advantages__image--offset {
+img.advantages__image--offset {
   top: 50%;
   transform: translateY(-50%);
 }
 
 
-.advantages__card .advantages__image img.advantages__image--card3 {
+img.advantages__image--card3 {
   top: 30%;
   height: 30%;
 }
 
-.advantages__card .advantages__text {
+.advantages__text {
   margin: auto;
   text-align: center;
   padding: 0 3rem;
@@ -352,18 +358,18 @@ h2 {
   line-height: 1.5rem;
 }
 
-.advantages__card .advantages__text h3 {
+.advantages__text h3 {
   color: #333;
   line-height: 2rem;
 }
 
-.advantages__card .advantages__text p {
+.advantages__text p {
   margin-top: 1.4rem;
   font-size: 13px;
   color: #666;
 }
 
-.advantages__card .advantages__text a {
+.advantages__text a {
   color: #ffb700;
 }
 
@@ -380,7 +386,6 @@ h2 {
 }
 
 /* YELLOW CARD */
-
 .yellow-card {
   text-align: left;
   margin: 10rem auto;
@@ -917,28 +922,6 @@ form button {
 .col-6 {
   max-width: calc(100% / 12 * 6);
   flex-basis: calc(100% / 12 * 6);
-}
-
-
-.container,
-.container-lg {
-  width: 80vw;
-  max-width: 1024px;
-  margin-inline: auto;
-  /* overflow-x: hidden; */
-}
-
-.container-fluid {
-  overflow: hidden;
-  width: 100vw;
-  max-width: 100%;
-  margin-inline: auto;
-}
-
-.mobile-menu {
-  padding: 2rem;
-  display: none;
-  margin-left: auto;
 }
 
 

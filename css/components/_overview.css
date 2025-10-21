@@ -1,0 +1,108 @@
+/* OVERVIEW */
+.header--main {
+  font-weight: bold;
+  width: fit-content;
+  text-align: center;
+  margin: 2.5rem auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #666;
+  background-color: #f9f9f9;
+}
+
+.header--main span {
+  color: #ffb700;
+}
+
+.hero__title {
+  text-align: center;
+  color: #333;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 12px 0;
+}
+
+.hero__title span {
+  color: #ffb700;
+}
+
+.hero__text {
+  text-align: center;
+  color: #777;
+  line-height: 1.8rem;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero__buttons button {
+  margin: 0;
+  padding: 0.5em 1.6em;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.hero__buttons .navbar__btn--book {
+  background-color: #ffb700;
+  color: white;
+}
+
+.hero__buttons .hero__btn--secondary {
+  background-color: white;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Jumbotron */
+.hero__video {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+video {
+  border-radius: 12px;
+  width: 85%;
+  height: auto;
+}
+
+/* A selection of our customers */
+.hero__ticker {
+  overflow: hidden;
+  margin-top: 10rem;
+}
+
+.hero__ticker .hero__ticker-list {
+  display: flex;
+  animation: move 40s linear infinite;
+  list-style-type: none;
+  width: max-content;
+}
+
+.hero__ticker .hero__ticker-list li {
+  width: 275px;
+}
+
+.hero__ticker .hero__ticker-list img {
+  width: 100%;
+  height: auto;
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

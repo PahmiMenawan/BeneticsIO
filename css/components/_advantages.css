@@ -1,0 +1,174 @@
+/* ADVANTAGES */
+#advantages {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.advantages__card {
+  border-radius: 12px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 2em 3em;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fefefe;
+}
+
+.advantages__image {
+  position: relative;
+  background-color: #fefefe;
+  height: 400px;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.advantages__image img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+img.advantages__image--blur {
+  filter: blur(3px);
+}
+
+img.advantages__image--offset {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+img.advantages__image--card3 {
+  top: 30%;
+  height: 30%;
+}
+
+.advantages__text {
+  margin: auto;
+  text-align: center;
+  padding: 0 3rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.advantages__text h3 {
+  color: #333;
+  line-height: 2rem;
+}
+
+.advantages__text p {
+  margin-top: 1.4rem;
+  font-size: 13px;
+  color: #666;
+}
+
+.advantages__text a {
+  color: #ffb700;
+}
+
+.advantages__discover-btn {
+  text-align: center;
+  background-color: #ffb700;
+  font-size: 1.4rem;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  color: #fefefe;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+/* YELLOW CARD */
+
+.yellow-card {
+  text-align: left;
+  margin: 10rem auto;
+  padding: 0 2.5rem;
+  display: flex;
+  background-color: #fcb731;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.yellow-card .yellow-card--webinar,
+.yellow-card .yellow-card--demo {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff
+}
+
+.yellow-card .yellow-card--webinar {
+  padding-right: 5rem;
+}
+
+.yellow-card .yellow-card--demo {
+  padding-right: 17rem;
+}
+
+.yellow-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.yellow-card h3 {
+  font-size: 3em;
+}
+
+.yellow-card button {
+  font-size: 1.4em;
+  padding: 15px 30px;
+  border: none;
+  color: #333;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.yellow-card__image,
+.yellow-card__badge {
+  display: flex;
+  position: relative;
+}
+
+.yellow-card .yellow-card__badge img {
+  max-height: 405px;
+  height: 100%;
+  width: auto;
+}
+
+.yellow-card .antonio {
+  position: absolute;
+  top: 0;
+  transform: translate(-30%, -10%);
+  left: 0;
+  height: 111%;
+}
+
+.yellow-card img {
+  height: 20rem;
+  width: auto;
+  display: inline;
+}
+
+.yc-title .webinar {
+  position: relative;
+  width: 30%;
+  font-weight: bold;
+  border: 2px solid white;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
