@@ -461,12 +461,12 @@ h2 {
 }
 
 /* OPINIONS */
-.opinions-title {
+.opinions__title {
   position: relative;
   width: 30%;
 }
 
-.subtitle {
+.opinions__badge {
   font-weight: bold;
   width: fit-content;
   text-align: center;
@@ -475,20 +475,20 @@ h2 {
   color: #666;
 }
 
-.opinions-title p {
+.opinions__title p {
   font-size: 0.9rem;
   margin-bottom: 1rem;
   text-align: left;
 }
 
-.opinions-title h2 {
+.opinions__title h2 {
   text-align: left;
   font-size: 2.2em;
   text-align: left;
   margin-bottom: 1rem;
 }
 
-.opinion-section {
+.opinions__list {
   display: flex;
   overflow-x: hidden;
   gap: 2rem;
@@ -499,7 +499,7 @@ h2 {
   left: 28rem;
 }
 
-.opinion {
+.opinions__item {
   text-align: left;
   width: 32rem;
   margin: 2rem 0;
@@ -509,22 +509,22 @@ h2 {
   padding: 2rem;
 }
 
-.opinion p {
+.opinions__item p {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.opinion .profile img {
+.opinions__item .opinions__profile img {
   width: 60px;
   border-radius: 30px;
 }
 
-.opinion .profile p {
+.opinions__item .opinions__profile p {
   font-weight: normal;
   margin: auto 0;
 }
 
-.opinion .profile {
+.opinions__item .opinions__profile {
   display: flex;
   gap: 1.5rem;
   font-size: 1rem;
@@ -532,12 +532,12 @@ h2 {
   padding: 20px 0;
 }
 
-.opinion .profile .role {
+.opinions__item .opinions__profile .role {
   color: rgba(0, 0, 0, 0.561);
   font-size: 0.8rem;
 }
 
-.arrows button {
+.opinions__arrows button {
   padding: 10px 20px;
   background-color: #fefefe;
   font-weight: bold;
@@ -1145,7 +1145,7 @@ form button {
     font-size: .9rem;
   }
 
-  .opinions-title {
+  .opinions__title {
     width: 100%;
   }
 
@@ -1196,7 +1196,7 @@ form button {
     text-align: center;
   }
 
-  .opinion-section {
+  .opinions__list {
     position: static;
   }
 
