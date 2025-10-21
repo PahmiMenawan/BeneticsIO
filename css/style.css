@@ -47,7 +47,10 @@ button {
   cursor: pointer;
 }
 
-button, a, li, article{
+button,
+a,
+li,
+article {
   transition: .3s;
 }
 
@@ -590,12 +593,12 @@ h2 {
   border-radius: 16px;
 }
 
-.prices__plan .price {
+.prices__price {
   font-weight: bold;
   font-size: 2rem;
 }
 
-.prices__plan .desc {
+.prices__desc {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.518);
   line-height: 1.5rem;
@@ -689,7 +692,6 @@ h2 {
   font-weight: bold;
 }
 
-
 .blog-section__item h3 {
   font-size: 1.4rem;
   letter-spacing: 1px;
@@ -701,32 +703,114 @@ h2 {
   line-height: 1.6;
 }
 
+
+/* PRESS */
+.press-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+}
+
+.press__comment {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.press__comment:nth-child(1) {
+  transform: translateY(3rem);
+  transform: translateX(-2rem);
+}
+
+.press__comment:nth-child(2) {
+  transform: translateY(-2rem);
+  transform: translateX(2rem);
+}
+
+.press__comment:nth-child(4) {
+  transform: translateY(1rem);
+}
+
+.press__comment .comments-mobile {
+  display: none;
+}
+
+.press__comment .comments-mobile a {
+  color: #ffb700;
+}
+
+.press__comment .comments-desktop {
+  display: block;
+}
+
+.comment__images {
+  width: 50%;
+  flex-basis: 40%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.comment__images img {
+  max-width: 80%;
+}
+
+.comment__images img.diagonal-arrow {
+  position: absolute;
+  max-width: 20%;
+  bottom: 0;
+  right: 25px;
+  background-color: #fcb731;
+  padding: 5px;
+  border-radius: 15px;
+  outline: 1px solid #f9f9f9;
+}
+
+.comment__text {
+  flex-basis: 60%;
+  max-width: 60%;
+  line-height: 1.5;
+}
+
+.comment__text p {
+  color: #969696;
+}
+
 /* FAQ */
-.wrapper {
+.faq__list li {
+  cursor: pointer;
+}
+
+.faq__wrapper {
   display: flex;
   width: 100%;
   margin: auto;
   justify-content: space-between;
 }
 
-
-
-.wrapper .faq li img {
+.faq__wrapper .faq__list li img {
   width: 50px;
 }
 
-.wrapper .faq li p {
+.faq__wrapper .faq__list li p {
   width: fit-content;
   margin: auto 0;
   max-width: 80%;
 }
 
-.wrapper .faq .item-wrapper {
+.faq__wrapper .faq__list .faq__item-header {
   display: flex;
   justify-content: space-between;
 }
 
-.wrapper .faq li {
+.faq__wrapper .faq__list li {
   border: 1px solid #aaa;
   background-color: #f9f9f9;
   margin-bottom: 1rem;
@@ -738,17 +822,17 @@ h2 {
   border-radius: 14px;
 }
 
-.wrapper .faq li .desc {
+.faq__wrapper .faq__list li .faq__answer {
   margin-top: 1rem;
   font-size: 12px;
   display: none;
 }
 
-.wrapper .faq li:hover .desc {
+.faq__wrapper .faq__list li:hover .faq__answer {
   display: block;
 }
 
-.wrapper .faq-title {
+.faq__wrapper .faq__title {
   width: 100%;
   position: sticky;
   top: 4.5rem;
@@ -756,17 +840,18 @@ h2 {
   padding: 0rem 2rem 2rem 0;
 }
 
-.wrapper .faq-title h2 {
+.faq__wrapper .faq__title h2 {
   text-align: left;
   font-size: 2.2em;
   margin-bottom: 1rem;
 }
 
-.wrapper .faq-title p {
+.faq__wrapper .faq__title p {
   font-size: 0.9em;
   color: #777;
 }
 
+/* FOOTER */
 footer {
   width: 100%;
   border-radius: 40px 40px 0 0;
@@ -782,9 +867,11 @@ footer {
   border-radius: 50%;
 }
 
-footer>.wrapper {
+.footer__wrapper {
   padding: 2rem 0;
   line-height: 2.3rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .end {
@@ -801,7 +888,7 @@ footer>.wrapper {
   color: black;
 }
 
-.desc {
+.faq__answer {
   line-height: 1.4rem;
   font-size: 0.9em;
   color: #777;
@@ -841,8 +928,6 @@ form button {
   /* overflow-x: hidden; */
 }
 
-
-
 .container-fluid {
   overflow: hidden;
   width: 100vw;
@@ -856,87 +941,6 @@ form button {
   margin-left: auto;
 }
 
-.press-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 900px;
-  margin: auto;
-  position: relative;
-}
-
-.comment {
-  width: 100%;
-  max-width: 420px;
-  display: flex;
-  height: fit-content;
-  align-items: center;
-  background: #fff;
-  border-radius: 16px;
-  padding: 2rem;
-}
-
-.comment:nth-child(1) {
-  transform: translateY(3rem);
-  transform: translateX(-2rem);
-}
-
-.comment:nth-child(2) {
-  transform: translateY(-2rem);
-  transform: translateX(2rem);
-}
-
-.comment:nth-child(4) {
-  transform: translateY(1rem);
-}
-
-.comment .comments-mobile {
-  display: none;
-}
-
-.comment .comments-mobile a {
-  color: #ffb700;
-}
-
-.comment .comments-desktop {
-  display: block;
-}
-
-.comment .image {
-  width: 50%;
-  flex-basis: 40%;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.comment .image img {
-  max-width: 80%;
-}
-
-.comment .image img.diagonal-arrow {
-  position: absolute;
-  max-width: 20%;
-  bottom: 0;
-  right: 25px;
-  background-color: #fcb731;
-  padding: 5px;
-  border-radius: 15px;
-  outline: 1px solid #f9f9f9;
-}
-
-.comment .text {
-  flex-basis: 60%;
-  max-width: 60%;
-  line-height: 1.5;
-}
-
-.faq li {
-  cursor: pointer;
-}
-
-.comment .text p {
-  color: #969696;
-}
 
 .list li a:hover,
 .list li a:focus {
@@ -964,7 +968,6 @@ form button {
 .price__toggle button:hover {
   background-color: #fcfcfc;
 }
-
 
 
 @media only screen and (max-width: 1199.98px) {
@@ -1030,16 +1033,9 @@ form button {
     margin-top: 12px;
   }
 
-  .wrapper {
+  .faq__wrapper,
+  .footer__wrapper {
     flex-wrap: wrap;
-  }
-
-  .wrapper .title {
-    width: 100%;
-    position: relative;
-    top: 0;
-    height: fit-content;
-    padding: 0rem 2rem 2rem;
   }
 
   .col-lg-12 {
@@ -1063,7 +1059,7 @@ form button {
     display: block;
   }
 
-  .comment {
+  .press__comment {
     width: 100%;
     transform: none;
     margin: 1rem 0;
@@ -1164,16 +1160,16 @@ form button {
     letter-spacing: 1px;
   }
 
-  .comment {
+  .press__comment {
     padding: 1rem;
     flex-direction: column;
   }
 
-  .comment .comments-desktop {
+  .press__comment .comments-desktop {
     display: none;
   }
 
-  .comment .comments-mobile {
+  .press__comment .comments-mobile {
     display: block;
   }
 
@@ -1186,15 +1182,15 @@ form button {
     margin-top: 0;
   }
 
-  .comment .image img {
+  .comment__images img {
     max-width: 100%;
   }
 
-  .comment .image img.diagonal-arrow {
+  .comment__images img.diagonal-arrow {
     right: 0;
   }
 
-  .comment .text {
+  .comment__text {
     text-align: center;
   }
 
@@ -1202,7 +1198,7 @@ form button {
     position: static;
   }
 
-  .chat {
+  .chat-icon {
     right: 14px;
   }
 
