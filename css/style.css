@@ -94,6 +94,8 @@ header {
   padding: 0 13rem;
 }
 
+
+
 /* NAVBAR */
 nav {
   margin: auto;
@@ -385,8 +387,8 @@ h2 {
   border-radius: 20px;
 }
 
-.yellow-card .text-gpt,
-.yellow-card .text-antonio {
+.yellow-card .yellow-card--webinar,
+.yellow-card .yellow-card--demo {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -394,11 +396,11 @@ h2 {
   color: #fff
 }
 
-.yellow-card .text-gpt {
+.yellow-card .yellow-card--webinar {
   padding-right: 5rem;
 }
 
-.yellow-card .text-antonio {
+.yellow-card .yellow-card--demo {
   padding-right: 17rem;
 }
 
@@ -974,8 +976,8 @@ form button {
     margin: 0 200px;
   }
 
-  .yellow-card .text-antonio,
-  .yellow-card .text-gpt {
+  .yellow-card .yellow-card--demo,
+  .yellow-card .yellow-card--webinar {
     margin-top: 45px;
     margin-bottom: 45px;
     padding: 0;
@@ -1121,13 +1123,13 @@ form button {
     font-size: 25px;
   }
 
-  .yellow-card .text-antonio p,
-  .yellow-card .text-gpt p {
+  .yellow-card .yellow-card--demo p,
+  .yellow-card .yellow-card--webinar p {
     line-height: 1.6;
   }
 
-  .yellow-card .text-antonio,
-  .yellow-card .text-gpt {
+  .yellow-card .yellow-card--demo,
+  .yellow-card .yellow-card--webinar {
     padding: 0 2em;
   }
 
