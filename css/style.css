@@ -12,7 +12,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: .5s;
   font-family: "OpenSauce";
 }
 
@@ -38,7 +37,7 @@
 /* GLOBAL STYLES */
 section {
   margin-bottom: 10rem;
-  background-image: url("../assets/section-background.svg");
+  background-image: url("../assets/img/section-background.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
@@ -46,6 +45,10 @@ section {
 
 button {
   cursor: pointer;
+}
+
+button, a, li, article{
+  transition: .3s;
 }
 
 li,
@@ -95,7 +98,7 @@ header {
 }
 
 /* NAVBAR */
-nav {
+.navbar {
   margin: auto;
   background-color: #fefefe;
   display: flex;
@@ -106,47 +109,47 @@ nav {
   padding-inline: 2rem;
 }
 
-nav img {
+.navbar img {
   width: 30px;
   height: 30px;
   margin-top: 0.8rem;
 }
 
-nav .logo {
+.navbar .logo {
   font-size: 1.6em;
   margin-left: 0.5rem;
   font-weight: bold;
   margin-top: 0.8rem;
 }
 
-.navbar-links,
-.navbar-links ul {
+.navbar__links,
+.navbar__links ul {
   list-style-type: none;
   display: flex;
 }
 
-.navbar-links li {
+.navbar__item {
   margin: 0.5rem;
   padding: 0.6rem;
   border-radius: 20px;
 }
 
-.navbar-links a {
+.navbar__link {
   color: black;
   text-decoration: none;
 }
 
-.navbar-links li:nth-child(1) {
+.navbar__item:nth-child(1) {
   border: 2px solid rgba(0, 0, 0, 0.152);
 }
 
-.misc {
+.navbar__actions {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.lgn-btn {
+.navbar__btn--login {
   background-color: white;
   border-radius: 20px;
   padding: 0.6rem;
@@ -156,7 +159,7 @@ nav .logo {
   cursor: pointer;
 }
 
-.misc .book-btn {
+.navbar__actions .navbar__btn--book {
   color: white;
   background-color: #ffb700;
   border: none;
@@ -174,7 +177,7 @@ select {
 }
 
 /* OVERVIEW */
-.header-main {
+.header--main {
   font-weight: bold;
   width: fit-content;
   text-align: center;
@@ -185,11 +188,11 @@ select {
   background-color: #f9f9f9;
 }
 
-.header-main span {
+.header--main span {
   color: #ffb700;
 }
 
-h1.main-title {
+.hero__title {
   text-align: center;
   color: #333;
   font-size: 3rem;
@@ -198,11 +201,11 @@ h1.main-title {
   margin: 12px 0;
 }
 
-h1.main-title span {
+.hero__title span {
   color: #ffb700;
 }
 
-.hero p {
+.hero__text {
   text-align: center;
   color: #777;
   line-height: 1.8rem;
@@ -210,13 +213,13 @@ h1.main-title span {
   margin: 1rem;
 }
 
-.hero .buttons {
+.hero__buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.hero .buttons button {
+.hero__buttons button {
   margin: 0;
   padding: 0.5em 1.6em;
   border-radius: 30px;
@@ -225,12 +228,12 @@ h1.main-title span {
   font-weight: bold;
 }
 
-.hero .buttons .book-btn {
+.hero__buttons .navbar__btn--book {
   background-color: #ffb700;
   color: white;
 }
 
-.hero .buttons .try-it {
+.hero__buttons .hero__btn--secondary {
   background-color: white;
   font-weight: bold;
   color: #333;
@@ -238,7 +241,7 @@ h1.main-title span {
 }
 
 /* Jumbotron */
-.video {
+.hero__video {
   text-align: center;
   margin-top: 5rem;
 }
@@ -250,23 +253,23 @@ video {
 }
 
 /* A selection of our customers */
-.running-text {
+.hero__ticker {
   overflow: hidden;
   margin-top: 10rem;
 }
 
-.running-text .image-ticker {
+.hero__ticker .hero__ticker-list {
   display: flex;
   animation: move 40s linear infinite;
   list-style-type: none;
   width: max-content;
 }
 
-.running-text .image-ticker li {
+.hero__ticker .hero__ticker-list li {
   width: 275px;
 }
 
-.running-text .image-ticker img {
+.hero__ticker .hero__ticker-list img {
   width: 100%;
   height: auto;
 }
@@ -295,7 +298,7 @@ h2 {
   line-height: 1.3;
 }
 
-.advantages-cards {
+.advantages__card {
   border-radius: 12px;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -307,7 +310,7 @@ h2 {
   background-color: #fefefe;
 }
 
-.advantages-cards .advantages-image {
+.advantages__card .advantages-image {
   position: relative;
   background-color: #fefefe;
   height: 400px;
@@ -315,7 +318,7 @@ h2 {
   border-radius: 12px;
 }
 
-.advantages-cards .advantages-image img {
+.advantages__card .advantages-image img {
   position: absolute;
   top: 0;
   left: 50%;
@@ -327,18 +330,18 @@ h2 {
   filter: blur(3px);
 }
 
-.advantages-cards .advantages-image img.offset {
+.advantages__card .advantages-image img.offset {
   top: 50%;
   transform: translateY(-50%);
 }
 
 
-.advantages-cards .advantages-image img.card3 {
+.advantages__card .advantages-image img.card3 {
   top: 30%;
   height: 30%;
 }
 
-.advantages-cards .advantages-text {
+.advantages__card .advantages-text {
   margin: auto;
   text-align: center;
   padding: 0 3rem;
@@ -346,18 +349,18 @@ h2 {
   line-height: 1.5rem;
 }
 
-.advantages-cards .advantages-text h3 {
+.advantages__card .advantages-text h3 {
   color: #333;
   line-height: 2rem;
 }
 
-.advantages-cards .advantages-text p {
+.advantages__card .advantages-text p {
   margin-top: 1.4rem;
   font-size: 13px;
   color: #666;
 }
 
-.advantages-cards .advantages-text a {
+.advantages__card .advantages-text a {
   color: #ffb700;
 }
 
@@ -385,8 +388,8 @@ h2 {
   border-radius: 20px;
 }
 
-.yellow-card .text-gpt,
-.yellow-card .text-antonio {
+.yellow-card .yellow-card--webinar,
+.yellow-card .yellow-card--demo {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -394,11 +397,11 @@ h2 {
   color: #fff
 }
 
-.yellow-card .text-gpt {
+.yellow-card .yellow-card--webinar {
   padding-right: 5rem;
 }
 
-.yellow-card .text-antonio {
+.yellow-card .yellow-card--demo {
   padding-right: 17rem;
 }
 
@@ -465,7 +468,6 @@ h2 {
 
 .subtitle {
   font-weight: bold;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.303);
   width: fit-content;
   text-align: center;
   padding: 10px 20px 10px 20px;
@@ -643,7 +645,6 @@ h2 {
 .blog {
   background-color: #f9f9f9;
   width: 100%;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.303);
   padding: 2rem;
   border-radius: 12px;
   transition: .6s;
@@ -944,7 +945,7 @@ form button {
 .yellow-btn:focus,
 .discover-btn:hover,
 .discover-btn:focus,
-.hero .buttons .book-btn:hover {
+.hero__buttons .navbar__btn--book:hover {
   background-color: #ffbd15;
   color: black;
   transform: scale(1.05);
@@ -952,8 +953,8 @@ form button {
 
 .white-btn:hover,
 .white-btn:focus,
-.hero .buttons .try-it:hover,
-.hero .buttons .try-it:focus {
+.hero__buttons .hero__btn--secondary:hover,
+.hero__buttons .hero__btn--secondary:focus {
   color: #fcb731;
   transform: scale(1.05);
 }
@@ -969,13 +970,13 @@ form button {
     width: 100vw;
   }
 
-  .advantages-cards .advantages-image {
+  .advantages__card .advantages-image {
     height: 200px;
     margin: 0 200px;
   }
 
-  .yellow-card .text-antonio,
-  .yellow-card .text-gpt {
+  .yellow-card .yellow-card--demo,
+  .yellow-card .yellow-card--webinar {
     margin-top: 45px;
     margin-bottom: 45px;
     padding: 0;
@@ -1006,7 +1007,7 @@ form button {
     font-size: 11px;
   }
 
-  .misc .book-btn {
+  .navbar__actions .navbar__btn--book {
     font-size: 12px;
   }
 
@@ -1014,7 +1015,7 @@ form button {
     padding: 0;
   }
 
-  .hero .buttons button {
+  .hero__buttons button {
     margin: 0;
     padding: 0.5em 1.6em;
     border-radius: 30px;
@@ -1066,8 +1067,8 @@ form button {
     margin: 1rem 0;
   }
 
-  .navbar-links ul,
-  .misc {
+  .navbar__links ul,
+  .navbar__actions {
     display: none;
   }
 }
@@ -1079,37 +1080,37 @@ form button {
     padding-inline: 1rem;
   }
 
-  h1.main-title,
+  .hero__title,
   h2 {
     font-size: 2rem;
   }
 
-  .hero .buttons {
+  .hero__buttons {
     flex-direction: column;
   }
 
-  .hero .buttons button {
+  .hero__buttons button {
     font-size: 1rem;
     width: 60%;
     margin: 0 auto;
   }
 
 
-  .advantages-cards .advantages-text h3 {
+  .advantages__card .advantages-text h3 {
     font-size: 22px;
   }
 
-  .advantages-cards .advantages-image {
+  .advantages__card .advantages-image {
     height: 200px;
     margin: 0;
   }
 
-  .advantages-cards .advantages-image,
-  .advantages-cards .advantages-text {
+  .advantages__card .advantages-image,
+  .advantages__card .advantages-text {
     padding: 0;
   }
 
-  .advantages-cards {
+  .advantages__card {
     gap: 2rem;
   }
 
@@ -1121,13 +1122,13 @@ form button {
     font-size: 25px;
   }
 
-  .yellow-card .text-antonio p,
-  .yellow-card .text-gpt p {
+  .yellow-card .yellow-card--demo p,
+  .yellow-card .yellow-card--webinar p {
     line-height: 1.6;
   }
 
-  .yellow-card .text-antonio,
-  .yellow-card .text-gpt {
+  .yellow-card .yellow-card--demo,
+  .yellow-card .yellow-card--webinar {
     padding: 0 2em;
   }
 
