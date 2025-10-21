@@ -310,7 +310,7 @@ h2 {
   background-color: #fefefe;
 }
 
-.advantages__card .advantages-image {
+.advantages__card .advantages__image {
   position: relative;
   background-color: #fefefe;
   height: 400px;
@@ -318,7 +318,7 @@ h2 {
   border-radius: 12px;
 }
 
-.advantages__card .advantages-image img {
+.advantages__card .advantages__image img {
   position: absolute;
   top: 0;
   left: 50%;
@@ -326,22 +326,22 @@ h2 {
   height: 100%;
 }
 
-.blur {
+.advantages__card .advantages__image img.advantages__image--blur {
   filter: blur(3px);
 }
 
-.advantages__card .advantages-image img.offset {
+.advantages__card .advantages__image img.advantages__image--offset {
   top: 50%;
   transform: translateY(-50%);
 }
 
 
-.advantages__card .advantages-image img.card3 {
+.advantages__card .advantages__image img.advantages__image--card3 {
   top: 30%;
   height: 30%;
 }
 
-.advantages__card .advantages-text {
+.advantages__card .advantages__text {
   margin: auto;
   text-align: center;
   padding: 0 3rem;
@@ -349,22 +349,22 @@ h2 {
   line-height: 1.5rem;
 }
 
-.advantages__card .advantages-text h3 {
+.advantages__card .advantages__text h3 {
   color: #333;
   line-height: 2rem;
 }
 
-.advantages__card .advantages-text p {
+.advantages__card .advantages__text p {
   margin-top: 1.4rem;
   font-size: 13px;
   color: #666;
 }
 
-.advantages__card .advantages-text a {
+.advantages__card .advantages__text a {
   color: #ffb700;
 }
 
-.discover-btn {
+.advantages__discover-btn {
   text-align: center;
   background-color: #ffb700;
   font-size: 1.4rem;
@@ -405,7 +405,7 @@ h2 {
   padding-right: 17rem;
 }
 
-.yellow-card .yc-content {
+.yellow-card__content {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -424,13 +424,13 @@ h2 {
   font-weight: bold;
 }
 
-.yellow-card .image,
-.yellow-card .image-big {
+.yellow-card__image,
+.yellow-card__badge {
   display: flex;
   position: relative;
 }
 
-.yellow-card .image-big img {
+.yellow-card .yellow-card__badge img {
   max-height: 405px;
   height: 100%;
   width: auto;
@@ -943,8 +943,8 @@ form button {
 
 .yellow-btn:hover,
 .yellow-btn:focus,
-.discover-btn:hover,
-.discover-btn:focus,
+.advantages__discover-btn:hover,
+.advantages__discover-btn:focus,
 .hero__buttons .navbar__btn--book:hover {
   background-color: #ffbd15;
   color: black;
@@ -970,7 +970,7 @@ form button {
     width: 100vw;
   }
 
-  .advantages__card .advantages-image {
+  .advantages__card .advantages__image {
     height: 200px;
     margin: 0 200px;
   }
@@ -982,8 +982,8 @@ form button {
     padding: 0;
   }
 
-  .yellow-card .image-big,
-  .yellow-card .image {
+  .yellow-card .yellow-card__badge,
+  .yellow-card__image {
     display: none;
   }
 
@@ -1095,18 +1095,17 @@ form button {
     margin: 0 auto;
   }
 
-
-  .advantages__card .advantages-text h3 {
+  .advantages__card .advantages__text h3 {
     font-size: 22px;
   }
 
-  .advantages__card .advantages-image {
+  .advantages__card .advantages__image {
     height: 200px;
     margin: 0;
   }
 
-  .advantages__card .advantages-image,
-  .advantages__card .advantages-text {
+  .advantages__card .advantages__image,
+  .advantages__card .advantages__text {
     padding: 0;
   }
 
@@ -1141,7 +1140,7 @@ form button {
     width: 100%;
   }
 
-  .discover-btn {
+  .advantages__discover-btn {
     padding: 0.8rem 1rem;
     font-size: .9rem;
   }
