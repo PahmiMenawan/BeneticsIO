@@ -547,7 +547,7 @@ h2 {
 }
 
 /* PRICES */
-.price-toggle {
+.price__toggle {
   border: 1px solid #aaa;
   background-color: #eee;
   padding: 10px;
@@ -558,18 +558,18 @@ h2 {
   gap: 1rem;
 }
 
-.price-toggle button {
+.price__toggle button {
   border: none;
   font-size: 1rem;
   padding: 10px;
   border-radius: 20px;
 }
 
-.price-toggle .selected {
+.price__toggle .selected {
   background-color: #fcfcfc;
 }
 
-.price-toggle button span {
+.price__toggle button span {
   font-size: 0.9rem;
   background-color: #ffb700;
   padding: 5px;
@@ -577,41 +577,41 @@ h2 {
   color: white;
 }
 
-.plans {
+.prices__plans {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
   margin: 0 auto;
 }
 
-.plan {
+.prices__plan {
   background-color: #fefefe;
   padding: 2rem;
   border-radius: 16px;
 }
 
-.plan .price {
+.prices__plan .price {
   font-weight: bold;
   font-size: 2rem;
 }
 
-.plan .desc {
+.prices__plan .desc {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.518);
   line-height: 1.5rem;
 }
 
-.plan span {
+.prices__plan span {
   font-weight: normal;
   color: rgba(0, 0, 0, 0.518);
   font-size: 0.8rem;
 }
 
-.plan>* {
+.prices__plan>* {
   margin: 1rem 0;
 }
 
-.plan .try {
+.prices__plan .prices__btn {
   text-align: center;
   width: 100%;
   background-color: #fefefe;
@@ -622,7 +622,7 @@ h2 {
   border-radius: 20px;
 }
 
-.learnmore {
+.prices__learnmore-btn {
   margin: 1.5rem auto;
   width: 100%;
   padding: 15px;
@@ -959,7 +959,7 @@ form button {
   transform: scale(1.05);
 }
 
-.price-toggle button:hover {
+.price__toggle button:hover {
   background-color: #fcfcfc;
 }
 
@@ -1053,7 +1053,7 @@ form button {
     gap: 0.5rem;
   }
 
-  .plans {
+  .prices__plans {
     flex-wrap: wrap;
   }
 
@@ -1153,7 +1153,7 @@ form button {
     padding: 1.5rem;
   }
 
-  .price-toggle button {
+  .price__toggle button {
     font-size: .8rem;
   }
 
