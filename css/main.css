@@ -1,11 +1,4 @@
-@import url(base/base.css);
-@import url(base/mediaqueries.css);
-@import url(components/_advantages.css);
-@import url(components/_blog.css);
-@import url(components/_faq.css);
-@import url(components/_footer.css);
-@import url(components/_navbar.css);
-@import url(components/_opinions.css);
-@import url(components/_overview.css);
-@import url(components/_press.css);
-@import url(components/_prices.css);
+@import url('base.css');
+@import url('layout.css');
+@import url('responsive.css');
+@import url('sections.css');

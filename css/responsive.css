@@ -74,7 +74,7 @@
 
 @media only screen and (max-width: 768.98px) {
 
-  .mobile-menu {
+  .navbar__mobile-menu {
     display: flex;
     gap: 0.5rem;
   }
@@ -201,7 +201,7 @@
     display: block;
   }
 
-  .mobile-menu {
+  .navbar__mobile-menu {
     padding: 0;
   }
 
