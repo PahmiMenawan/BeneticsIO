@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="assets/img/favicon.svg" type="image/x-icon" />
   <title>BeneticsIO</title>
 </head>
@@ -12,26 +13,26 @@
 <body>
   <header>
     <div class="container-lg">
-      <nav class="shadow">
-        <div class="navbar-links">
+      <nav class="navbar shadow">
+        <div class="navbar__links">
           <img src="assets/img/logo.png" alt="" />
-          <a href="#" class="logo">benetics</a>
+          <a href="#" class="logo navbar__link">benetics</a>
           <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#advantages">Advantages</a></li>
-            <li><a href="#prices">Prices</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#overview">Overview</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#advantages">Advantages</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#prices">Prices</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#about">About Us</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#blog">Blog</a></li>
           </ul>
         </div>
-        <div class="mobile-menu">
+        <div class="navbar__mobile-menu">
           <select name="lang">
             <option value="en" selected>EN</option>
             <option value="id">ID</option>
           </select>
-          <button class="lgn-btn">Menu</button>
+          <button class="navbar__btn--login">Menu</button>
         </div>
-        <div class="misc">
+        <div class="navbar__actions">
           <li>
             <select name="lang">
               <option value="en" selected>EN</option>
@@ -39,10 +40,10 @@
             </select>
           </li>
           <li>
-            <button class="lgn-btn white-btn shadow">Login</button>
+            <button class="navbar__btn--login white-btn shadow">Login</button>
           </li>
           <li>
-            <button class="book-btn shadow yellow-btn">Book a demo</button>
+            <button class="navbar__btn--book shadow yellow-btn">Book a demo</button>
           </li>
         </div>
 
@@ -52,34 +53,34 @@
   <main>
     <section id="overview">
       <div class="container">
-        <div class="header-main shadow">
+        <div class="header--main shadow">
           <p>APP <span>UPDATES &#9733;</span> | OVERVIEW &#10095;</p>
         </div>
         <div class="hero">
-          <h1 class="main-title">
+          <h1 class="hero__title">
             Anyone else here who wants to <span>save time</span>?
           </h1>
-          <p>
+          <p class="hero__text">
             Construction projects are teamwork. Working better together means
             finishing sooner - and saving money. The Benetics app supports you
             in every phase of construction
           </p>
 
-          <div class="buttons">
-            <button class="book-btn shadow">Book a demo</button>
-            <button class="try-it white-btn shadow">Try it now for free</button>
+          <div class="hero__buttons">
+            <button class="navbar__btn--book shadow">Book a demo</button>
+            <button class="hero__btn--secondary white-btn shadow">Try it now for free</button>
           </div>
         </div>
-        <div class="video">
+        <div class="hero__video">
           <video src="assets/video/videoplayback.mp4" controls>
             Your browser did not support video play
           </video>
         </div>
       </div>
       <div class="container-fluid">
-        <div class="running-text">
+        <div class="hero__ticker">
           <h2>A selection of our customers:</h2>
-          <ul class="image-ticker">
+          <ul class="hero__ticker-list">
             <li><img src="assets/img/logo (2).png" alt="" /></li>
             <li><img src="assets/img/logo (4).png" alt="" /></li>
             <li><img src="assets/img/logo (6).png" alt="" /></li>
@@ -116,13 +117,13 @@
         <div class="header shadow">ADVANTAGES</div>
         <div class="hero">
           <h2>For your construction projects</h2>
-          <p>
+          <p class="hero__text">
             With the Benetics app, you and your team can do more in less time:
             Hello digitalization!
           </p>
         </div>
-        <div class="advantages-cards shadow">
-          <div class="advantages-text col-6 col-lg-12">
+        <div class="advantages__card shadow">
+          <div class="advantages__text col-lg-12">
             <h3>Current plans for everyone</h3>
             <p>
               Old plans lead to construction errors. With Benetics, that's
@@ -133,16 +134,16 @@
               <a href="#">Learn more</a>
             </p>
           </div>
-          <div class="advantages-image col-6 col-lg-12">
+          <div class="advantages__image col-lg-12">
             <img src="assets/img/card1.png" alt="">
           </div>
         </div>
-        <div class="advantages-cards shadow">
-          <div class="advantages-image col-6 col-lg-12">
+        <div class="advantages__card shadow">
+          <div class="advantages__image col-lg-12">
             <img src="assets/img/card2a.png" alt="">
-            <img class="offset" src="assets/img/card2b.png" alt="">
+            <img class="advantages__image--offset" src="assets/img/card2b.png" alt="">
           </div>
-          <div class="advantages-text col-6 col-lg-12">
+          <div class="advantages__text col-lg-12">
             <h3>To-do lists instead of dead times</h3>
             <p>
               Unnecessary sitting around on the construction site? Given. With
@@ -155,8 +156,8 @@
             </p>
           </div>
         </div>
-        <div class="advantages-cards shadow">
-          <div class="advantages-text col-6 col-lg-12">
+        <div class="advantages__card shadow">
+          <div class="advantages__text col-lg-12">
             <h3>Director's reports via voice assistant</h3>
             <p>
               Directing work is worth hard cash. Stupid if they are not
@@ -169,18 +170,18 @@
               <span><a href="#">Learn more</a></span>
             </p>
           </div>
-          <div class="advantages-image col-6 col-lg-12">
-            <img class="blur" src="assets/img/phone-3.png" alt="">
-            <img class="card3" src="assets/img/phone-3a.png" alt="">
+          <div class="advantages__image col-lg-12">
+            <img class="advantages__image--blur" src="assets/img/phone-3.png" alt="">
+            <img class="advantages__image--card3" src="assets/img/phone-3a.png" alt="">
           </div>
         </div>
-        <button class="discover-btn shadow">Discover more benefits</button>
+        <button class="advantages__discover-btn shadow">Discover more benefits</button>
         <div class="yellow-card">
-          <div class="text-gpt">
+          <div class="yellow-card--webinar">
             <div class="yc-title">
               <p class="webinar">WEBINAR</p>
             </div>
-            <div class="yc-content">
+            <div class="yellow-card__content">
               <h3>Use ChatGPT for reports and save time</h3>
               <p>
                 Thursday, 8/29, 4:00p.m. - 4:20 p.m.: Get to know Benetics
@@ -188,34 +189,34 @@
                 Focus: Creating reports by voice input. Faster than ever,
                 even in dialect and foreign languages.
               </p>
-              <div class="yc-action"><button class="shadow white-btn">Register here</button></div>
+              <div><button class="shadow white-btn">Register here</button></div>
             </div>
           </div>
-          <div class="image-big">
+          <div class="yellow-card__badge">
             <img src="assets/img/yellowcard.svg" alt="" />
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="opinions-title">
-          <p class="subtitle">OPINIONS</p>
+        <div class="opinions__title">
+          <p class="opinions__badge shadow">OPINIONS</p>
           <h2>Anyone can do self-promotion. What our customers say.</h2>
           <p>
             Many companies are already working with Benetics. <br />
             Praise pleases us, criticism helps us
           </p>
           <p><strong>
-            Because we want to get even better. Every day.
-          </strong>
+              Because we want to get even better. Every day.
+            </strong>
           </p>
-          <div class="opinion-section">
-            <div class="opinion shadow">
+          <div class="opinions__list">
+            <div class="opinions__item shadow">
               <p>
                 Thanks to Benetics, our fitters always have the latest plans
                 in their pockets. Everyone works with a to-do list that is
                 always up to date. This saves us time and money.
               </p>
-              <div class="profile">
+              <div class="opinions__profile">
                 <img src="assets/img/6666fa3d4ec1285d4b28f21e_Beno.png" alt="" />
                 <p class="name">
                   Beno Stettler <br />
@@ -223,13 +224,13 @@
                 </p>
               </div>
             </div>
-            <div class="opinion shadow">
+            <div class="opinions__item shadow">
               <p>
                 Thanks to Benetics, our fitters always have the latest plans
                 in their pockets. Everyone works with a to-do list that is
                 always up to date. This saves us time and money.
               </p>
-              <div class="profile">
+              <div class="opinions__profile">
                 <img src="assets/img/6666fa43f871959dc751f34d_Stefano.png" alt="" />
                 <p>
                   Stefano Judas <br />
@@ -240,7 +241,7 @@
           </div>
         </div>
       </div>
-      <div class="arrows">
+      <div class="opinions__arrows">
         <button class="white-btn shadow">&#10229;</button>
         <button class="white-btn shadow">&#10230;</button>
       </div>
@@ -255,48 +256,48 @@
             Worth it. <br />
             For you and your team.
           </h2>
-          <p>
-            The prices are simple and transparent. Try Benetics now for
+          <p class="hero__text">
+            The prices are simple and transparent. <br> Try Benetics now for
             free.
           </p>
         </div>
-        <div class="price-toggle">
+        <div class="price__toggle">
           <button class="selected">Monthly</button>
           <button>Annual <span>-20%</span></button>
         </div>
-        <div class="plans">
-          <div class="plan shadow">
+        <div class="prices__plans">
+          <div class="prices__plan shadow">
             <p><strong>Starter</strong></p>
-            <div class="price">Free</div>
-            <p class="desc">
+            <div class="prices__price">Free</div>
+            <p class="prices__desc">
               For small teams who want to work in a more structured way between
               the construction site and the office
             </p>
-            <button class="try white-btn">Try it now</button>
+            <button class="prices__btn white-btn">Try it now</button>
           </div>
-          <div class="plan shadow">
+          <div class="prices__plan shadow">
             <p><strong>Professional</strong></p>
-            <div class="price">$15 <span>per user/month</span></div>
-            <p class="desc">
+            <div class="prices__price">$15 <span>per user/month</span></div>
+            <p class="prices__desc">
               For professional companies that want to implement and document
               several construction projects more efficiently.
             </p>
-            <button class="try white-btn">Try it now</button>
+            <button class="prices__btn white-btn">Try it now</button>
           </div>
-          <div class="plan shadow">
+          <div class="prices__plan shadow">
             <p><strong>Enterprise</strong></p>
-            <div class="price">Individual</div>
-            <p class="desc">
+            <div class="prices__price">Individual</div>
+            <p class="prices__desc">
               For large companies that implement construction projects with many
               participants in complex structures.
             </p>
-            <button class="try white-btn">Book an appointment</button>
+            <button class="prices__btn white-btn">Book an appointment</button>
           </div>
         </div>
-        <button class="learnmore yellow-btn">Learn more</button>
+        <button class="prices__learnmore-btn yellow-btn">Learn more</button>
         <div class="yellow-card">
           <div class="yellow-card--demo">
-            <div class="yc-content">
+            <div class="yellow-card__content">
 
               <h3>Fancy a short live demo?</h3>
               <p>
@@ -310,7 +311,7 @@
               <button class="white-btn">Book an appointment now</button>
             </div>
           </div>
-          <div class="image">
+          <div class="yellow-card__image">
             <img src="assets/img/yellowcard.svg" alt="" />
             <img class="antonio" src="assets/img/antonio.webp" alt="" />
           </div>
@@ -322,13 +323,13 @@
       <div class="container">
         <div class="hero">
           <h2>Even more reading material: Our blog.</h2>
-          <p>
+          <p class="hero__text">
             Here you will find the latest news and article. From us and others.
             Which we think is important.
           </p>
         </div>
-        <div class="blogs">
-          <article class="blog">
+        <div class="blog-section">
+          <article class="blog-section__item shadow">
             <a href="">
               <img src="assets/img/article1.jpg" alt="" />
               <div class="categories">Brownfield Site</div>
@@ -340,7 +341,7 @@
               <div class="date"><strong>17 JULY 2024</strong></div>
             </a>
           </article>
-          <article class="blog">
+          <article class="blog-section__item shadow">
             <a href="">
               <img src="assets/img/article2.jpg" alt="" />
               <div class="categories">Success Stories</div>
@@ -355,7 +356,7 @@
               <div class="date"><strong>7 AUGUST 2024</strong></div>
             </a>
           </article>
-          <article class="blog">
+          <article class="blog-section__item shadow">
             <a href="">
               <img src="assets/img/article3.jpg" alt="" />
               <div class="categories">Product</div>
@@ -379,19 +380,17 @@
     <div class="container">
       <section id="press">
         <div class="header shadow">PRESS</div>
-
         <div class="hero">
           <h2>Opinion of others</h2>
-          <p>The media experts on Benetics</p>
+          <p class="hero__text">The media experts on Benetics</p>
         </div>
-        <!-- WE'LL GET EM NEXT TIME !!! -->
         <div class="press-grid">
-          <div class="comment shadow">
-            <div class="image">
+          <div class="press__comment shadow">
+            <div class="comment__images">
               <img src="assets/img/comment1.svg" alt="" />
               <img class="diagonal-arrow" src="assets/img/45-arrow.svg" alt="">
             </div>
-            <div class="text">
+            <div class="comment__text">
               <h3>NZZ .CH</h3>
               <p>
                 <q>Fewer reprimands and more autonomy</q>: Artificial intelligence
@@ -399,33 +398,33 @@
               </p>
             </div>
           </div>
-          <div class="comment shadow">
-            <div class="image">
+          <div class="press__comment shadow">
+            <div class="comment__images">
               <img src="assets/img/comment2.svg" alt="" />
               <img class="diagonal-arrow" src="assets/img/45-arrow.svg" alt="">
 
             </div>
-            <div class="text">
+            <div class="comment__text">
               <h3>Hochparterre.ch</h3>
               <p>An app aims to simplify construction processes</p>
             </div>
           </div>
-          <div class="comment shadow">
-            <div class="image">
+          <div class="press__comment shadow">
+            <div class="comment__images">
               <img src="assets/img/comment1.svg" alt="" />
               <img class="diagonal-arrow" src="assets/img/45-arrow.svg" alt="">
             </div>
-            <div class="text">
+            <div class="comment__text">
               <h3>Startupticker.ch</h3>
               <p>Successful market entry for PropTech startup Benetics</p>
             </div>
           </div>
-          <div class="comment shadow">
-            <div class="image">
+          <div class="press__comment shadow">
+            <div class="comment__images">
               <img src="assets/img/comment4.svg" alt="" />
               <img class="diagonal-arrow" src="assets/img/45-arrow.svg" alt="">
             </div>
-            <div class="text">
+            <div class="comment__text">
               <h3>Baumeister.swiss</h3>
               <p class="comments-desktop">
                 Thanks to Al technologies such as benetics.io, language barriers in
@@ -441,66 +440,65 @@
           </div>
         </div>
 
+      </section>
     </div>
-    <!-- WE'LL GET EM NEXT TIME !!! -->
-    </section>
     <section id="faq">
       <div class="container">
-        <div class="wrapper">
-          <div class="faq-title">
+        <div class="faq__wrapper">
+          <div class="faq__title">
             <h2>Frequently Asked Questions</h2>
             <p>
               Yes, but. What if? And how exactly? Please contact me if
               something is unclear. We are happy to be there for you.
             </p>
           </div>
-          <ul class="faq">
+          <ul class="faq__list">
             <li>
-              <div class="item-wrapper">
+              <div class="faq__item-header">
                 <p>
                   Does the cost per user really include all the features listed?
                 </p>
                 <img src="assets/img/expand.svg" alt="" />
               </div>
-              <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, magni.</p>
+              <p class="faq__answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, magni.</p>
             </li>
             <li>
-              <div class="item-wrapper">
+              <div class="faq__item-header">
                 <p>How does Benetics differ from other software solutions?</p>
                 <img src="assets/img/expand.svg" alt="" />
               </div>
-              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, sunt!</p>
+              <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, sunt!</p>
             </li>
             <li>
-              <div class="item-wrapper">
+              <div class="faq__item-header">
                 <p>How easy is it to set up Benetics for me and my team?</p>
                 <img src="assets/img/expand.svg" alt="" />
               </div>
-              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, sunt!</p>
+              <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, sunt!</p>
             </li>
             <li>
-              <div class="item-wrapper">
+              <div class="faq__item-header">
                 <p>Can Benetics be integrated with my existing systems?</p>
                 <img src="assets/img/expand.svg" alt="" />
               </div>
-              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, sunt!</p>
+              <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, sunt!</p>
             </li>
             <li>
-              <div class="item-wrapper">
+              <div class="faq__item-header">
                 <p>
                   Can employees from different companies work together in
                   Benetics?
                 </p>
                 <img src="assets/img/expand.svg" alt="" />
               </div>
-              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, sunt!</p>
+              <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, sunt!</p>
             </li>
             <li>
-              <div class="item-wrapper">
+              <div class="faq__item-header">
                 <p>What technical requirements do I need for Benetics?</p>
                 <img src="assets/img/expand.svg" alt="" />
               </div>
-              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, sunt!</p>
+              <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, sunt!</p>
             </li>
           </ul>
         </div>
@@ -508,7 +506,7 @@
     </section>
   </main>
   <footer class="shadow">
-    <div class="wrapper container">
+    <div class="footer__wrapper container">
       <div class="footer-contact col-lg-12">
         <div class="logo">
           <img src="assets/img/logo.png" alt="" />
