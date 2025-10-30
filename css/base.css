@@ -103,7 +103,7 @@ header {
 .container,
 .container-lg {
   width: 80vw;
-  max-width: 1024px;
+  max-width: 1092px;
   margin-inline: auto;
   /* overflow-x: hidden; */
 }
