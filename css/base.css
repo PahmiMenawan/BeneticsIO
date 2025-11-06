@@ -1,9 +1,9 @@
 /* BEHIND THE SCENES */
 @font-face {
   font-family: "OpenSauce";
-  src: url('../../assets/Fonts/opensauceone-medium-webfont.woff2') format('woff2'),
-    url('../../assets/Fonts/opensauceone-medium-webfont.woff') format('woff'),
-    url("../../assets/Fonts/OpenSauceOne-Medium.ttf") format("truetype");
+  src: url('../assets/Fonts/opensauceone-medium-webfont.woff2') format('woff2'),
+    url('../assets/Fonts/opensauceone-medium-webfont.woff') format('woff'),
+    url("../assets/Fonts/OpenSauceOne-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
