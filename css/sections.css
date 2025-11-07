@@ -271,7 +271,7 @@ img.advantages__image--card3 {
 
 .advantages__text p {
   margin-top: 1.4rem;
-  font-size: 13px;
+  font-size: 1rem;
   color: #666;
 }
 
@@ -307,8 +307,9 @@ img.advantages__image--card3 {
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  color: #fff
+  gap: 1.5rem;
+  color: #fff;
+  font-size: 15px;
 }
 
 .yellow-card .yellow-card--webinar {
@@ -322,7 +323,7 @@ img.advantages__image--card3 {
 .yellow-card__content {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .yellow-card h3 {
@@ -511,7 +512,7 @@ img.advantages__image--card3 {
 }
 
 .prices__desc {
-  font-size: 1rem;
+  font-size: 16.16px;
   color: rgba(0, 0, 0, 0.518);
   line-height: 1.5rem;
 }
@@ -554,15 +555,17 @@ img.advantages__image--card3 {
   display: flex;
   margin: auto;
   justify-content: space-between;
+  /* align-items: flex-start; */
   gap: 2rem;
 }
 
 .blog-section__item {
   background-color: #f9f9f9;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   transition: .6s;
+  height: 640px;
 }
 
 .blog-section__item a {
