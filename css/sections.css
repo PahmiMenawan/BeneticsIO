@@ -166,7 +166,7 @@ video {
 .hero__ticker .hero__ticker-list {
   margin-top: 2rem;
   display: flex;
-  animation: move 40s linear infinite;
+  animation: move 120s linear infinite;
   list-style-type: none;
   width: max-content;
 }
