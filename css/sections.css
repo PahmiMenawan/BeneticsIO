@@ -574,7 +574,6 @@ img.advantages__image--card3 {
 }
 
 .blog-section__item:hover a .categories {
-  transition: .3s;
   color: #0a0a0a;
 }
 
@@ -582,7 +581,6 @@ img.advantages__image--card3 {
 .blog-section__item:focus {
   transform: scale(1.05);
   background-color: #efefef;
-  transition: .6s;
 }
 
 .blog-section__item img {
@@ -682,9 +680,10 @@ img.advantages__image--card3 {
   bottom: 0;
   right: 25px;
   background-color: #fcb731;
-  padding: 5px;
+  padding: 7px;
   border-radius: 15px;
   outline: 1px solid #f9f9f9;
+  overflow: visible;
 }
 
 .comment__text {
@@ -774,12 +773,14 @@ footer {
 }
 
 .chat-icon {
-  position: absolute;
+  position: fixed;
   background-color: #1972f5;
   bottom: 65px;
   right: 59px;
   padding: 15px;
   border-radius: 50%;
+  overflow: visible;
+  transition: .5s;
 }
 
 .footer__wrapper {
@@ -856,4 +857,9 @@ form button {
 
 .price__toggle button:hover {
   background-color: #fcfcfc;
+}
+
+.chat-icon:hover {
+  background-color: #3a87f9;
+  transform: scale(1.1);
 }
