@@ -773,6 +773,7 @@ footer {
 }
 
 .chat-icon {
+  cursor: pointer;
   position: fixed;
   background-color: #1972f5;
   bottom: 65px;
@@ -780,7 +781,7 @@ footer {
   padding: 15px;
   border-radius: 50%;
   overflow: visible;
-  transition: .5s;
+  transition: .3s;
 }
 
 .footer__wrapper {
